@@ -1,0 +1,34 @@
+commands:
+  N98\Magento\Command\Installer\InstallCommand:
+    magento-packages:
+      name: magento-mirror-1.9.2.1
+        version: 1.9.2.1
+        source:
+          url: https://github.com/OpenMage/magento-mirror.git
+          type: git
+          reference: magento-1.9.2.1
+        extra:
+          sample-data: sample-data-1.9.1.0
+
+    demo-data-packages:
+      - name: sample-data-1.9.1.0
+        version: 1.9.1.0
+        dist:
+          url: http://www.magentocommerce.com/downloads/assets/1.9.1.0/magento-sample-data-1.9.1.0.tar.gz
+          type: tar
+
+    installation:
+      defaults:
+        currency: EUR
+        locale: de_DE
+        timezone: Europe/Berlin
+        use_secure: no
+        use_rewrites: yes
+        session_save: files
+        admin_username: admin
+        admin_firstname: Leo
+        admin_lastname: Shang
+        admin_password: password123
+        admin_frontname: admin
+        admin_email: shang.lei@icloud.com
+        encryption_key:
