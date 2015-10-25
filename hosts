@@ -8,4 +8,6 @@
 255.255.255.255	broadcasthost
 ::1             localhost 
 
-127.0.0.1 ausger.mac
+127.0.0.1 ausger.dev
+127.0.0.1 magerun.test
+127.0.0.1 mage-repo.dev
